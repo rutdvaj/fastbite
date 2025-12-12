@@ -18,9 +18,9 @@
         "name": "next"
       }
     ],
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+   "paths": {
+  "@/*": ["./src/*", "./*"]
+}
   },
   "include": [
     "next-env.d.ts",
@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
+, "src/app/pages/auth/login/loginTemplate.tsx", "src/app/pages/auth/login/page.tsx", "src/app/_components/profile.jsx", "src/app/api/payments/verify/route.js", "src/app/api/payments/createorder/route.js"  ],
   "exclude": ["node_modules"]
 }
