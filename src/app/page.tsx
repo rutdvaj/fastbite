@@ -1,10 +1,20 @@
-import Image from "next/image";
+import React from "react";
+import { Navbar04 } from "@/app/_components/navbar";
+import { HeroCarouselFM } from "@/app/_components/herosection";
+import { HomePageComp } from "@/app/_components/homepage";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      {/* <Homepage /> */}
-      <h1 className="">Hello World!</h1>
+    <div>
+      <div>
+        <Navbar04 />
+      </div>
+      <div>
+        <HeroCarouselFM />
+      </div>
+      <div>
+        <HomePageComp />
+      </div>
     </div>
   );
 }
