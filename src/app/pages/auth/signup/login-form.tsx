@@ -49,7 +49,7 @@ export function SignUpForm({
         </Field>
 
         <Field>
-          <Button type="submit" formAction={Signup}>
+          <Button type="submit" formAction={Signup} className="cursor-pointer">
             Sign Up
           </Button>
         </Field>

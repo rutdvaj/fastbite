@@ -144,8 +144,10 @@ export function HomePageComp() {
                 {formatCategoryName(category)}
               </h2>
 
-              <Link href="/products">
-                <Button variant="ghost">View All</Button>
+              <Link href="/pages/products">
+                <Button variant="ghost" className="cursor-pointer">
+                  View All
+                </Button>
               </Link>
             </div>
 

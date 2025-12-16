@@ -124,7 +124,7 @@ export default function AddToCartButton({ productId, disabled = false }) {
     return (
       <Button
         onClick={handleAddToCart}
-        className="w-full"
+        className="w-full cursor-pointer"
         disabled={disabled || loading}
       >
         {loading ? "Adding..." : "Add to Cart"}
@@ -134,18 +134,18 @@ export default function AddToCartButton({ productId, disabled = false }) {
 
   // Show quantity controls if in cart
   return (
-    <div className="flex items-center justify-center gap-3 w-full">
+    <div className="flex items-center justify-center gap-3 w-full cursor-pointer">
       <Button
         variant="outline"
         size="icon"
-        className="h-9 w-9"
+        className="h-9 w-9 cursor-pointer"
         onClick={handleDecrement}
         disabled={loading}
       >
         <Minus size={16} />
       </Button>
 
-      <span className="font-semibold text-lg min-w-[30px] text-center">
+      <span className="font-semibold text-lg min-w-7.5 text-center">
         {quantity}
       </span>
 

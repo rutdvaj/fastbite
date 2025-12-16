@@ -233,7 +233,7 @@ export const Navbar04 = React.forwardRef<HTMLElement, Navbar04Props>(
 
             <form
               onSubmit={handleSearchSubmit}
-              className="relative w-full max-w-[900px]"
+              className="relative w-full max-w-225"
             >
               <Input
                 id={searchId}
@@ -257,15 +257,19 @@ export const Navbar04 = React.forwardRef<HTMLElement, Navbar04Props>(
                   variant="ghost"
                   size="sm"
                   onClick={goToSignIn}
-                  className="text-sm"
+                  className="text-sm cursor-pointer"
                 >
                   Sign In
                 </Button>
               )}
 
               {/* CART ICON ONLY */}
-              <Button size="sm" onClick={goToCart} className="text-sm px-4 h-9">
-                <ShoppingCart size={18} className="text-white" />
+              <Button
+                size="sm"
+                onClick={goToCart}
+                className="text-sm px-4 h-9 cursor-pointer"
+              >
+                <ShoppingCart size={18} className="text-white " />
               </Button>
             </div>
           )}

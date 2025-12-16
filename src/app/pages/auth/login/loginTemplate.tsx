@@ -48,7 +48,7 @@ export function LoginForm({
         </Field>
 
         <Field>
-          <Button type="submit" formAction={Login}>
+          <Button type="submit" formAction={Login} className="cursor-pointer">
             Login
           </Button>
         </Field>
